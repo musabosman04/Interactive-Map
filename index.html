@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(18, 181, 231);
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 80px;
+            margin: 20px 0px;
+            font-weight: 100;
+        }
+
+        button {
+            font-family: 'Ubuntu', sans-serif;
+            display: inline-block;
+            border: #fff solid 1px;
+            border-radius: 10px;
+            padding: 10px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Interactive Map</h1>
+    <button id="Offices">Offices</button>
+    <button id="countryside">Countryside</button>
+    <button id="playground">Playground</button>
+    <button id="house">House</button>
+    <button id="industries">industries</button>
+
+    <img id="myImage" src="./images/map.png" alt="">
+
+
+
+
+    <script>
+
+
+        document.getElementById('Offices').addEventListener('mouseover', function () {
+            document.getElementById('myImage').src = './images/offices.png';
+        })
+
+
+        document.getElementById('countryside').addEventListener('mouseover', function () {
+            document.getElementById('myImage').src = './images/countryside.png';
+        })
+
+
+        document.getElementById('playground').addEventListener('mouseover', function () {
+            document.getElementById('myImage').src = './images/playground.png';
+        })
+
+
+        document.getElementById('house').addEventListener('mouseover', function () {
+            document.getElementById('myImage').src = './images/house.png';
+        })
+
+
+        document.getElementById('industries').addEventListener('mouseover', function () {
+            document.getElementById('myImage').src = './images/industries.png';
+        })
+
+    </script>
+</body>
+
+</html>
